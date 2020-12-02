@@ -1,0 +1,32 @@
+.not-found {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 150px;
+}
+.not-found .left {
+  height: 360px;
+  width: 100%;
+  max-width: 430px;
+  float: right;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-image: url("https://gw.alipayobjects.com/zos/rmsportal/KpnpchXsobRgLElEozzI.svg");
+  margin-right: 130px;
+}
+.not-found .right h1 {
+  color: #434e59;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 72px;
+  margin-bottom: 24px;
+}
+.not-found .right h2 {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
