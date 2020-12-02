@@ -1,0 +1,57 @@
+/*
+ * @Author: 叶有志 
+ * @Date: 2019-09-22 00:43:20 
+ * @Last Modified by: 叶有志
+ * @Last Modified time: 2019-10-06 00:57:27
+ */
+
+.header {
+    height: 80px;
+    background-color: #fff;
+    box-sizing: border-box;
+    .header-top {
+        height: 40px;
+        line-height: 40px;
+        text-align: right;
+        padding-right: 20px;
+        border-bottom: 1px solid #1DA57A;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-user-select: none;
+        .user-text {
+            margin-right: 10px;
+            font-weight: 500;
+        }
+    }
+    .header-bottom {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        .header-bottom-left {
+            position: relative;
+            font-size: 20px;
+            text-align: center;
+            flex: 2;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 30px;
+                border-top: 20px solid #fff;
+                border-right: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 20px solid transparent;
+            }
+        }
+        .header-bottom-right {
+            flex: 5;
+            text-align: right;
+            padding-right: 20px;
+            img {
+                width: 30px;
+                height: 22px;
+                margin: 15px;
+            }
+        }
+    }
+}
