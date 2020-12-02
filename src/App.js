@@ -1,13 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { hot } from 'react-hot-loader/root';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Login from './pages/login/login';
+import Admin from './pages/admin/admin';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Router>
+      <Switch>
+        <Route path='/login' component={Login} />
+        <Route path='/' component={Admin} />
+      </Switch>
+    </Router>
   );
 }
 
-export default App;
+export default hot(App);
+
+
